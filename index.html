@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop‑Pro | Simple E‑Commerce</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0;background:#f6f7fb}
+    header{background:#0b74de;color:white;padding:16px 24px}
+    .container{max-width:1000px;margin:20px auto;padding:0 16px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+    .card{background:white;padding:12px;border-radius:8px;box-shadow:0 2px 6px rgba(0,0,0,.08)}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:6px;border:0;cursor:pointer}
+    .btn-primary{background:#0b74de;color:white}
+    .btn-ghost{background:transparent;border:1px solid #ddd}
+    footer{padding:24px;text-align:center;color:#666;margin-top:40px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center">
+      <h1 style="margin:0;font-size:22px">Shop‑Pro</h1>
+      <button class="btn btn-ghost" onclick="alert('Cart feature works in backend version')">Cart (0)</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Our Products</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Headphones" />
+          <h3>Wireless Headphones</h3>
+          <p>Comfortable over‑ear Bluetooth headphones.</p>
+          <strong>₹1299</strong><br><br>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Smart+Watch" />
+          <h3>Smart Watch</h3>
+          <p>Fitness tracking & notifications.</p>
+          <strong>₹2399</strong><br><br>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Powerbank" />
+          <h3>Power Bank</h3>
+          <p>10,000 mAh fast‑charging power bank.</p>
+          <strong>₹899</strong><br><br>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:40px">
+      <h2>About Shop‑Pro</h2>
+      <p>
+        Shop‑Pro is a simple demo e‑commerce store created in a single
+        <strong>index.html</strong> file. You can upload it directly to GitHub Pages and it will work instantly.
+      </p>
+    </section>
+  </main>
+
+  <footer>© 2025 Shop‑Pro. All Rights Reserved.</footer>
+</body>
+</html>
